@@ -5,7 +5,7 @@
 사용 데이터 : https://aihub.or.kr/aihubdata/data/view.do?currMenu=115&topMenu=100&aihubDataSe=realm&dataSetSn=147
 
 
-![alt text]([readmeimage/image.png])
+![alt text](readmeimage/image.png)
 
 (원천데이터)
 
