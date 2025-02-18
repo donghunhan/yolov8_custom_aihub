@@ -4,38 +4,38 @@
 
 사용 데이터 : https://aihub.or.kr/aihubdata/data/view.do?currMenu=115&topMenu=100&aihubDataSe=realm&dataSetSn=147
 
-![alt text]([readmeimage\image.png](https://github.com/donghunhan/yolov8_custom_aihub/blob/main/readmeimage/image.png))
+![alt text]([readmeimage/image.png])
 
 (원천데이터)
 
-![alt text](readmeimage\image-1.png)
+![alt text](readmeimage/image-1.png)
 
 (라벨링 데이터)
 
-![alt text](readmeimage\image-2.png)
+![alt text](readmeimage/image-2.png)
 
 (다운로드 파일)
 # 다운로드파일 git bash로 열어주기 or Vs code에서 터미널-터미널분할-git bash 실행
-![alt text](readmeimage\image-3.png)
+![alt text](readmeimage/image-3.png)
 
 tar -xvf aaa.tar -> AI Hub데이터들은 tar파일로 분할 압축 되어있다 이렇게 풀면 part 파일이 생성되는데 분할이 되어있으면
 
 파일이 2개로 나눠져 있으므로 하나의 파일로 합쳐줘야한다
 
-![alt text](readmeimage\image-4.png)
+![alt text](readmeimage/image-4.png)
 
 cat AI_HUBpart파일.zip.part* > backup.tgz 같은걸로 합쳐줘야한다. -> 이걸 반디집으로 압축해제 해주면됌
 
-![alt text](readmeimage\image-5.png)
+![alt text](readmeimage/image-5.png)
 폴더가 생기고 안에 들어가보면 
-![alt text](readmeimage\image-6.png)
+![alt text](readmeimage/image-6.png)
 구성이 되어있다. 이걸 전부 반복한다음 압축해제해서 파일을 모아두자
 
 ### 파일 구성을 다하였으면 label폴더의 구성이 json 형식이다 이걸 yolo형식의 label로 변경할 필요가 있다.
-![alt text](readmeimage\image-7.png)
+![alt text](readmeimage/image-7.png)
 
-![alt text](readmeimage\image-8.png)
-![alt text](readmeimage\image-9.png)
+![alt text](readmeimage/image-8.png)
+![alt text](readmeimage/image-9.png)
 
 여기서는 질병인지 아닌지만 구분할려고 type의 0과 1만을 활용하고 json 파일의 주목 객체의 bbox 좌표(points)들을 
 yolov8형태의 형식으로 나눌 필요가 있다. 
@@ -43,11 +43,11 @@ yolov8형태의 형식으로 나눌 필요가 있다.
 
 이미지 파일들은 yolo_images 폴더안에(good,wlfqud,wmdrkd) 으로 만들고
 라벨 파일들은 yolo_labels 폴더안에(good,wlfqud,wmdrkd) 으로 만들어준다
-![alt text](readmeimage\image10.png)
+![alt text](readmeimage/image10.png)
 
 또한 동일폴더에 train\images(labels), valid\images(labels), test\images(labels) 의폴더 총 6개를 만들어준다
 
-![alt text](readmeimage\image11.png)
+![alt text](readmeimage/image11.png)
 
 이후 폴더내에 data.yaml파일을 하나만든다
 
