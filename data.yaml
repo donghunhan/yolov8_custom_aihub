@@ -1,0 +1,11 @@
+# data.yaml
+ 
+train: C:\Users\dounghun\Desktop\gochu_yolo\train\images # 학습 이미지 경로
+val: C:\Users\dounghun\Desktop\gochu_yolo\valid\images    # 검증 이미지 경로
+test: C:\Users\dounghun\Desktop\gochu_yolo\test\images  # 테스트 이미지 경로
+
+nc: 2  # 클래스 수
+
+names:  # 클래스 이름
+  0: good
+  1: wlfqud
